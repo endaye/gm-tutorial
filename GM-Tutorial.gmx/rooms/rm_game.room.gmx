@@ -52,6 +52,19 @@
   </views>
   <instances>
     <instance objName="obj_player" x="480" y="384" name="inst_E43FFEB8" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="160" y="160" name="inst_C3852826" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="512" y="128" name="inst_C899B0F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="576" y="288" name="inst_55602325" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="288" y="544" name="inst_FBE133B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="672" y="480" name="inst_B09A8775" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="768" y="224" name="inst_6F113DFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="192" y="256" name="inst_85E4D1C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="160" y="576" name="inst_BC8F30B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="800" y="608" name="inst_E9DDE637" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="480" y="640" name="inst_F74695CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="864" y="320" name="inst_BA8B787A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="864" y="96" name="inst_DF3F2013" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asteroid" x="128" y="384" name="inst_E3A67AE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
