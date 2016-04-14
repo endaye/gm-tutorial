@@ -136,33 +136,36 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>/// Player die, game over
-var randomangle = random(360);
-var o;
-o = instance_create(x, y, obj_deadplayer);
-o.angle = 0 + randomangle;
-o = instance_create(x, y, obj_deadplayer);
-o.angle = 120 + randomangle;
-o = instance_create(x, y, obj_deadplayer);
-o.angle = 240 + randomangle;
-
-with (obj_deadplayer)
+if (sprite_index == spr_player)
 {
-    direction = angle;
-    image_angle = angle;
-    speed = 2;
-}
-
-audio_play_sound(snd_explosion, 10, 0);
-instance_destroy();
-
-if (global.life &gt; 0)
-{ 
-    global.life -= 1;
-    instance_create(room_width/2, room_height/2, obj_player);
-}
-else 
-{
-    instance_create(0, 0, obj_gameover);
+    var randomangle = random(360);
+    var o;
+    o = instance_create(x, y, obj_deadplayer);
+    o.angle = 0 + randomangle;
+    o = instance_create(x, y, obj_deadplayer);
+    o.angle = 120 + randomangle;
+    o = instance_create(x, y, obj_deadplayer);
+    o.angle = 240 + randomangle;
+    
+    with (obj_deadplayer)
+    {
+        direction = angle;
+        image_angle = angle;
+        speed = 2;
+    }
+    
+    audio_play_sound(snd_explosion, 10, 0);
+    instance_destroy();
+    
+    if (global.life &gt; 0)
+    { 
+        global.life -= 1;
+        instance_create(room_width/2, room_height/2, obj_player);
+    }
+    else 
+    {
+        instance_create(0, 0, obj_gameover);
+    }
 }
 </string>
           </argument>
