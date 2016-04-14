@@ -37,7 +37,7 @@ image_speed = 0;
 image_index = irandom(2);
 // real number [0, 360.0];
 direction = random(360);
-speed = 1 + random(2);
+speed = 0.8 + random(2);
 </string>
           </argument>
         </arguments>
