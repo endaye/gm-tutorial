@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>while (place_meeting(x, y, obj_player))
+            <string>while (distance_to_object(obj_player) &lt; 100)
 {
     x = random(room_width);
     y = random(room_height);
@@ -38,6 +38,7 @@ image_index = irandom(2);
 // real number [0, 360.0];
 direction = random(360);
 speed = 0.8 + random(2);
+rotate_speed = random_range(-1, 1);
 </string>
           </argument>
         </arguments>
