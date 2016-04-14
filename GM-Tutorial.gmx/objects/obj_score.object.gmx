@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>/// Scores = 0
 global.points = 0;
+global.life = 2;
+
 </string>
           </argument>
         </arguments>
@@ -52,9 +54,10 @@ global.points = 0;
             <string>/// Show scores
 draw_set_color(c_white);
 draw_set_font(fnt_small);
-draw_set_halign(fa_right);
+draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-draw_text(64, 32, global.points);
+draw_text(16, 16, "Score: " + string(global.points));
+draw_text(16, 32, "Lives: " + string(global.life));
 </string>
           </argument>
         </arguments>
