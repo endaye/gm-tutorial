@@ -135,8 +135,25 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Player die, game restart
-game_restart();
+            <string>/// Player die, game over
+var randomangle = random(360);
+var o;
+o = instance_create(x, y, obj_deadplayer);
+o.angle = 0 + randomangle;
+o = instance_create(x, y, obj_deadplayer);
+o.angle = 120 + randomangle;
+o = instance_create(x, y, obj_deadplayer);
+o.angle = 240 + randomangle;
+
+with (obj_deadplayer)
+{
+    direction = angle;
+    image_angle = angle;
+    speed = 2;
+}
+
+audio_play_sound(snd_explosion, 10, 0);
+instance_destroy();
 </string>
           </argument>
         </arguments>
