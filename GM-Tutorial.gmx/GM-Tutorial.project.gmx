@@ -16,23 +16,33 @@
     <sprite>sprites\spr_asteroid_s</sprite>
     <sprite>sprites\spr_deadplayer</sprite>
     <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\spr_star</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bkg_galaxy</background>
+  </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_small</font>
     <font>fonts\fnt_large</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_player</object>
-    <object>objects\obj_bullet</object>
-    <object>objects\obj_asteroid</object>
-    <object>objects\obj_asteroid_s</object>
-    <object>objects\obj_score</object>
-    <object>objects\obj_spawner</object>
-    <object>objects\obj_deadplayer</object>
-    <object>objects\obj_gameover</object>
+    <objects name="menu">
+      <object>objects\obj_score</object>
+      <object>objects\obj_gameover</object>
+      <object>objects\obj_spawner</object>
+    </objects>
+    <objects name="background">
+      <object>objects\obj_star</object>
+      <object>objects\obj_galaxy</object>
+    </objects>
+    <objects name="play">
+      <object>objects\obj_player</object>
+      <object>objects\obj_deadplayer</object>
+      <object>objects\obj_bullet</object>
+      <object>objects\obj_asteroid</object>
+      <object>objects\obj_asteroid_s</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>

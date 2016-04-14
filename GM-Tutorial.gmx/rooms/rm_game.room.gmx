@@ -65,6 +65,7 @@
     <instance objName="obj_asteroid_s" x="288" y="288" name="inst_5CABF55B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="32" y="32" name="inst_EEB2C7DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner" x="32" y="352" name="inst_99D04EE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_galaxy" x="64" y="352" name="inst_C628CABF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
