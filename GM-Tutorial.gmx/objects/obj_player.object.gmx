@@ -73,8 +73,8 @@ image_angle %= 360;
           <argument>
             <kind>1</kind>
             <string>// 0.2 means 0.2px added per frame;
-motion_add(image_angle, 0.2);
-if(speed &gt; 5) speed = 5;
+motion_add(image_angle, 0.1);
+if(speed &gt; 3) speed = 5;
 </string>
           </argument>
         </arguments>

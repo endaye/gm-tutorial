@@ -25,13 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// make the image imutable
+            <string>while (place_meeting(x, y, obj_player))
+{
+    x = random(room_width);
+    y = random(room_height);
+}
+
+// make the image imutable
 image_speed = 0;
 // irandom means to generate a integer from 0 to X randomly;
 image_index = irandom(2);
 // real number [0, 360.0];
 direction = random(360);
-speed = 0.5 + random(2);
+speed = 0.3 + random(0.7);
 </string>
           </argument>
         </arguments>
