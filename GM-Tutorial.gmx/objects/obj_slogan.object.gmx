@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Scores = 0
-global.points = 0;
-global.life = 2;
+            <string>alpha = 1;
+frame = 60;
 
 </string>
           </argument>
@@ -51,33 +50,22 @@ global.life = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Show scores
-draw_set_color(c_white);
-draw_set_font(fnt_small);
-draw_set_halign(fa_left);
+            <string>draw_set_colour(c_white);
+draw_set_font(fnt_large);
+draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_alpha(1);
-draw_text(16, 16, "Score: " + string(global.points));
-draw_text(16, 32, "Lives: " + string(global.life));
+
+if frame &lt; 0 frame = 60;
+if frame &lt; 40 {
+    if frame &lt; 20 draw_set_alpha(1);
+    else draw_set_alpha(0.5);
+    draw_text(room_width/2, room_height - 50, "Muse, come play with me!");
+}
+frame--;
+if instance_exists(obj_gameover) instance_destroy();
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="10" enumb="82">
-      <action>
-        <libid>1</libid>
-        <id>331</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_restart_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

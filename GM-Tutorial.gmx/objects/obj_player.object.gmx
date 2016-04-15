@@ -200,7 +200,7 @@ image_angle %= 360;
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
+    <event eventtype="9" enumb="17">
       <action>
         <libid>1</libid>
         <id>603</id>

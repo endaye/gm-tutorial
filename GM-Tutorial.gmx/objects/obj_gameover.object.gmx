@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Init the flash speed
-showmessage = 60;
+frame = 60;
 </string>
           </argument>
         </arguments>
@@ -53,18 +53,18 @@ showmessage = 60;
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(c_white);
-
+draw_set_alpha(1);
 draw_set_font(fnt_large);
 draw_text(room_width/2, room_height/2, "Game Over");
 
 draw_set_font(fnt_small);
 
-if (showmessage &lt; 0) showmessage = 60;
-if (showmessage &lt; 30) 
+if (frame &lt; 0) frame = 60;
+if (frame &lt; 30) 
 {
     draw_text(room_width/2, room_height/2 + 32, "press R to restart!");
 }
-showmessage -= 1;
+frame -= 1;
 </string>
           </argument>
         </arguments>

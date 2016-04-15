@@ -31,6 +31,7 @@
       <object>objects\obj_score</object>
       <object>objects\obj_gameover</object>
       <object>objects\obj_spawner</object>
+      <object>objects\obj_slogan</object>
     </objects>
     <objects name="background">
       <object>objects\obj_star</object>
